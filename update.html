@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERDENT</title>
+    <link rel="stylesheet" href="update.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Përditëso Pacientin</h1>
+        <form id="updatePatientForm">
+            <div class="form-group">
+                <label for="patientName">Emri dhe mbiemri</label>
+                <input type="text" id="patientName" name="patientName" required>
+            </div>
+            <div class="form-group">
+                <label for="birthDate">Data e lindjes</label>
+                <input type="date" id="birthDate" name="birthDate" required>
+            </div>
+            <div class="form-group">
+                <label for="residence">Vendbanimi</label>
+                <input type="text" id="residence" name="residence" required>
+            </div>
+            <div class="form-group">
+                <label for="appointmentDate">Data e takimit</label>
+                <input type="date" id="appointmentDate" name="appointmentDate" required>
+            </div>
+            <div class="form-group">
+                <label for="diagnosis">Diagnoza</label>
+                <textarea id="diagnosis" name="diagnosis" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="service">Shërbimi</label>
+                <textarea id="service" name="service" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="totalCost">Kosto totale</label>
+                <input type="number" id="totalCost" name="totalCost" required>
+            </div>
+            <input type="submit" class="btn update-btn" value="Përditëso">
+        </form>
+    </div>
+    <script src="update.js"></script>
+</body>
+</html>
